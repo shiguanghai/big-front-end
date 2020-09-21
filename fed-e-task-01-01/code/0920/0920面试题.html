@@ -32,7 +32,7 @@ var urls = [
 
     用 Promise 实现的思路是， 首先并发请求3个url, 得到3个Promise, 然后组成一个叫 Promises的数组。
     再不断的调用Promise.race来返回最快改变状态的Promise, 然后从数组Promises中删掉这个Promise对象，
-    再加入一个新的Promise,知道所有的url被取完,最后再使用Promise.all来处理一边遍数组Promises中没有改变状态的Promise。
+    再加入一个新的Promise,知道所有的url被取完,最后再使用Promise.all来处理一边遍数组Promises中没有改变状态的Promise。 
 
   */
 
