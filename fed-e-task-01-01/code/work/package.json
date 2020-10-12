@@ -1,8 +1,8 @@
 {
-  "name": "20200919",
+  "name": "work",
   "version": "1.0.0",
   "description": "",
-  "main": "06-purefunction.js",
+  "main": "1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
