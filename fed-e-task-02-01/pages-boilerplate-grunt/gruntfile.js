@@ -2,7 +2,9 @@
 
 
 const sass = require('sass')
-require('load-grunt-tasks')(grunt) // 自动加载所有的 grunt 插件中的任务
+
+
+const LoadGruntTasks = require('load-grunt-tasks') 
 
 const data = {
   menus: [
@@ -45,14 +47,13 @@ const data = {
   date: new Date()
 }
 
-
 module.exports = (grunt) => {
   // grunt.initConfig() 用于为任务添加一些配置选项
   grunt.initConfig({
     // 删除目录
     clean: {
       build: {
-        src: ['dist', 'temp']
+        src: ['dist', 'temp', '.tmp']
       }
     },
     // 将scss转换为css
@@ -86,7 +87,7 @@ module.exports = (grunt) => {
     // 编译html，并将数据对象中的变量注入模板
     swigtemplates: {
       options: {
-        defaultContext: require('data'),
+        defaultContext: data,
         templatesDir: 'src'
       },
       build: {
@@ -118,17 +119,6 @@ module.exports = (grunt) => {
         dest: 'dist'
       }
     },
-    // 监听文件变化，对其进行编译处理
-    watch: {
-      bulidScss: {
-        files: 'src/assets/styles/*.scss',
-        tasks: ['sass']
-      },
-      bulidJs: {
-        files: 'src/assets/scripts/*.js',
-        tasks: ['babel']
-      }
-    },
     // 浏览器同步测试工具
     browserSync: {
       build: {
@@ -148,11 +138,26 @@ module.exports = (grunt) => {
         }
       }
     },
+    // 监听文件变化，对其进行编译处理
+    watch: {
+      bulidScss: {
+        files: 'src/assets/styles/*.scss',
+        tasks: ['sass']
+      },
+      bulidJs: {
+        files: 'src/assets/scripts/*.js',
+        tasks: ['babel']
+      },
+      buildHtml: {
+        files: 'src/*.html',
+        tasks: ['swigtemplates']
+      }
+    },
     // 资源合并压缩
     useminPrepare: {
       html: 'temp/*.html',
       options: {
-        dest: 'temp',
+        dest: 'dist',
         root: ['dist', '.'],
       }
     },
@@ -168,7 +173,7 @@ module.exports = (grunt) => {
       },
       build: {
         expand: true,
-        cwd: 'dist',
+        cwd: 'temp',
         src: '*.html',
         dest: 'dist'
       }
@@ -190,5 +195,7 @@ module.exports = (grunt) => {
 
   // 必须先执行'compile'任务后，才能'browserSync'任务
   // 切记'watch'不能在'browserSync'任务之前执行
-  grunt.registerTask('develop', ['clean', 'compile', 'browserSync', 'watch'])
+  grunt.registerTask('develop', ['compile', 'browserSync', 'watch'])
+
+  LoadGruntTasks(grunt) // 自动加载所有的 grunt 插件中的任务
 }
