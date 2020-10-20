@@ -17,7 +17,7 @@
   "license": "MIT",
   "author": "zce <w@zce.me> (https://zce.me)",
   "scripts": {
-    "clean": "grunt clean",
+    "compile": "grunt compile",
     "build": "grunt build",
     "develop": "grunt develop"
   },
