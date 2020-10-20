@@ -123,7 +123,7 @@ const serve = () => {
 
 const useref = () => {
   return src('temp/*.html', { base: 'temp' })
-    .pipe(plugins.useref({ searchPath: ['dist', '.'] }))
+    .pipe(plugins.useref({ searchPath: ['temp', '.'] }))
     // html js css三种流
     // 压缩js文件
     .pipe(plugins.if(/\.js$/, plugins.uglify()))

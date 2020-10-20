@@ -53,7 +53,7 @@ module.exports = (grunt) => {
     // 删除目录
     clean: {
       build: {
-        src: ['dist', 'temp', '.tmp']
+        src: ['dist', '.tmp']
       }
     },
     // 将scss转换为css
@@ -68,7 +68,7 @@ module.exports = (grunt) => {
         ext: '.css',
         cwd: 'src/assets/styles',
         src: '*.scss',
-        dest: 'temp/assets/styles'
+        dest: 'dist/assets/styles'
       }
     },
     // 将es6转换为es5
@@ -81,7 +81,7 @@ module.exports = (grunt) => {
         expand: true,
         cwd: 'src/assets/scripts',
         src: '*.js',
-        dest: 'temp/assets/scripts'
+        dest: 'dist/assets/scripts'
       }
     },
     // 编译html，并将数据对象中的变量注入模板
@@ -92,7 +92,7 @@ module.exports = (grunt) => {
       },
       build: {
         src: ['src/*.html'],
-        dest: 'temp/'
+        dest: 'dist/'
       }
     },
     // 压缩图片文字
@@ -125,12 +125,12 @@ module.exports = (grunt) => {
         open: true, // 自动打开页面 默认true
         notify: false, // 是否提示
         bsFiles: {
-          src: ['temp', 'src', 'public']
+          src: ['dist', 'src', 'public']
         },
         options: {
           watchTask: true,
           server: {
-            baseDir: ['temp', 'src', 'public'],
+            baseDir: ['dist', 'src', 'public'],
             routes: { // 优先于baseDir
               '/node_modules': 'node_modules'
             }
@@ -155,7 +155,7 @@ module.exports = (grunt) => {
     },
     // 资源合并压缩
     useminPrepare: {
-      html: 'temp/*.html',
+      html: 'dist/*.html',
       options: {
         dest: 'dist',
         root: ['dist', '.'],
@@ -173,7 +173,7 @@ module.exports = (grunt) => {
       },
       build: {
         expand: true,
-        cwd: 'temp',
+        cwd: 'dist',
         src: '*.html',
         dest: 'dist'
       }
