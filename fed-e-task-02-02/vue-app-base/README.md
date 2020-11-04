@@ -73,7 +73,6 @@ prod.js:
 2. eslint-config-standard依赖：eslint-plugin-import eslint-plugin-standard eslint-plugin-promise `yarn add eslint-plugin-import@2.20.2 eslint-plugin-promise@4.2.1 eslint-plugin-standard@4.0.0 --dev`
 3. 共享配置`yarn add @vue/eslint-config-standard@5.1.2 --dev`
 4. 设置解析器`yarn add babel-eslint@10.1.0 --dev` 默认使用Espree
-<!-- 5. 最终的运行环境`yarn add eslint-plugin-node@11.1.0 --dev` -->
 5. 在package.json 为 lint 定义'eslint --ext .js,.vue src',为 lintfix 定义 'eslint --fix --ext .js,.vue src'
 
 .eslintgnore 忽略文件：
