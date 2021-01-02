@@ -1,9 +1,0 @@
-{
-  "name": "src",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "flow-bin": "^0.135.0"
-  }
-}
