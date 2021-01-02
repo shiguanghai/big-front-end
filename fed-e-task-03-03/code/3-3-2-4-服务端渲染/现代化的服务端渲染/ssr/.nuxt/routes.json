@@ -1,0 +1,16 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "D:\\\\Study\\\\BigFrontEnd\\\\big-front-end-phase-5\\\\fed-e-task-03-03\\\\code\\\\3-3-2-4-服务端渲染\\\\现代化的服务端渲染\\\\ssr\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_2ba516c2"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\Study\\\\BigFrontEnd\\\\big-front-end-phase-5\\\\fed-e-task-03-03\\\\code\\\\3-3-2-4-服务端渲染\\\\现代化的服务端渲染\\\\ssr\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_09e54f64"
+  }
+]
