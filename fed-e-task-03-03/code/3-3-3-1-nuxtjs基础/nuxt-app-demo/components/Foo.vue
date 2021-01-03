@@ -6,7 +6,8 @@
         v-for="item in posts"
         :key="item.id"
       >
-        <nuxt-link :to="'/article/' + item.id">{{ item.title }}</nuxt-link>
+      <!-- {{ item.title }} -->
+      <nuxt-link :to="'/article/' + item.id">{{ item.title }}</nuxt-link>
       </li>
     </ul>
   </div>
@@ -16,6 +17,7 @@
 export default {
   name: 'FooPage',
   props: ['posts'],
+  // asyncData 只能在页面组件中使用
   // async asyncData () {
   //   console.log('foo asyncData')
   //   return {
