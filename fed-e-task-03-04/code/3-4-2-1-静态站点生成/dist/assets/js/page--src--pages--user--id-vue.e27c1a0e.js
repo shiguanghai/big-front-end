@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{"9/OC":function(e,s,t){"use strict";t.r(s);var n={name:"UserPage"},a=t("KHd+"),i=Object(a.a)(n,(function(){var e=this.$createElement,s=this._self._c||e;return s("div",[s("h1",[this._v("User "+this._s(this.$route.params.id)+" Page")])])}),[],!1,null,null,null);s.default=i.exports}}]);
