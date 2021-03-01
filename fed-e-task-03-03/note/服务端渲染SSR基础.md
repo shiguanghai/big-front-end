@@ -1,20 +1,3 @@
----
-title: 服务端渲染（SSR）基础
-date: 2021-01-02 22:40:13
-sidebar: 'auto'
-tags:
- - Vue.js
- - Part3·Vue.js 框架源码与进阶
- - 服务端渲染
- - NuxtJS
-categories:
- - 大前端
-publish: true 
-isShowComments: false
----
-
-
-
 ## 9.1 概述
 随着前端技术栈和工具链的迭代成熟，前端工程化、模块化也已成为了当下的主流技术方案。在这波技术浪潮当中，涌现了诸如Angular、React、Vue等基于客户端渲染的前端框架
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210102140231857.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTQ5MjU2,size_16,color_FFFFFF,t_70)

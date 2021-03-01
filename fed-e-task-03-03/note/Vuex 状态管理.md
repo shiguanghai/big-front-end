@@ -1,17 +1,3 @@
----
-title: Vuex 状态管理
-date: 2020-12-31 17:13:20
-sidebar: 'auto'
-tags:
- - Vue.js
- - Part3·Vue.js 框架源码与进阶
- - Vuex
-categories:
- - 大前端
-publish: true 
-isShowComments: false
----
-
 
 ## 8.1 组件通信方式
 ### 组件内的状态管理流程
