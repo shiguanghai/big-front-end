@@ -1,17 +1,3 @@
----
-title: Vuex 状态管理 - 购物车案例
-date: 2020-12-31 19:22:16
-sidebar: 'auto'
-tags:
- - Vue.js
- - Part3·Vue.js 框架源码与进阶
- - Vuex
-categories:
- - 大前端
-publish: true 
-isShowComments: false
----
-
 
 ## 8.5 Vuex 购物车案例
 

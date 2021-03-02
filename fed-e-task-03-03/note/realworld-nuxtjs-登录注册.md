@@ -1,17 +1,3 @@
----
-title: NuxtJS案例 - Realworld项目 - 登录注册
-date: 2021-01-05 23:21:05
-sidebar: 'auto'
-tags:
- - Vue.js
- - Part3·Vue.js 框架源码与进阶
- - NuxtJS
-categories:
- - 大前端
-publish: true 
-isShowComments: false
----
-
 
 ## 11.3 登录注册
 ### 实现基本登录功能

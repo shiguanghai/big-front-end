@@ -1,17 +1,3 @@
----
-title: NuxtJS案例 - Realworld项目 - 文章/发布部署
-date: 2021-01-16 00:08:19
-sidebar: 'auto'
-tags:
- - Vue.js
- - Part3·Vue.js 框架源码与进阶
- - NuxtJS
-categories:
- - 大前端
-publish: true 
-isShowComments: false
----
-
 
 ## 11.5 文章详情
 ### 展示基本信息

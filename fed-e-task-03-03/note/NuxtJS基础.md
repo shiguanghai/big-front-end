@@ -1,18 +1,3 @@
----
-title: NuxtJS 基础
-date: 2021-01-03 21:56:25
-sidebar: 'auto'
-tags:
- - Vue.js
- - Part3·Vue.js 框架源码与进阶
- - 服务端渲染
- - NuxtJS
-categories:
- - 大前端
-publish: true 
-isShowComments: false
----
-
 
 ## 10.1 NuxtJS 介绍
 ### NuxtJS 是什么

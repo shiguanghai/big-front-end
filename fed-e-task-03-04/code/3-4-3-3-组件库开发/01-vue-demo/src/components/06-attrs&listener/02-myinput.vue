@@ -5,6 +5,7 @@
        如果是 class 和 style 的话，会合并最外层标签的 class 和 style 
   -->
   <!-- <input type="text" class="form-control" :placeholder="placeholder"> -->
+  <!-- <input type="text" class="form-control"> -->
 
   <!--
     2. 如果子组件中不想继承父组件传入的非 prop 属性，可以使用 inheritAttrs 禁用继承
@@ -14,6 +15,7 @@
   -->
   <!-- <div>
     <input type="text" v-bind="$attrs" class="form-control">
+    <input type="text" class="form-control">
   </div> -->
 
 

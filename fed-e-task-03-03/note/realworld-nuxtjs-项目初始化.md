@@ -1,17 +1,3 @@
----
-title: NuxtJS案例 - Realworld项目 - 项目初始化
-date: 2021-01-04 23:27:15
-sidebar: 'auto'
-tags:
- - Vue.js
- - Part3·Vue.js 框架源码与进阶
- - NuxtJS
-categories:
- - 大前端
-publish: true 
-isShowComments: false
----
-
 
 ## 11.1 案例介绍
 ### 案例相关资源
@@ -177,7 +163,7 @@ Footer：
  <template>
   <nuxt />
 </template>
-```
+ ```
 
 视图 - 布局：`pages/layout/index.vue`
 ```js
