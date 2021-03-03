@@ -2,11 +2,15 @@
   "name": "lg-input",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "shiguanghai <wangzibo18@outlook.com> (https://shiguanghai.top/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "3"
+  }
 }
