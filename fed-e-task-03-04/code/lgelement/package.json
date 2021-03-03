@@ -13,7 +13,9 @@
     "build-storybook": "build-storybook",
     "lerna": "lerna publish",
     "build:prod": "cross-env NODE_ENV=production rollup -c",
-    "build:dev": "cross-env NODE_ENV=development rollup -c"
+    "build:dev": "cross-env NODE_ENV=development rollup -c",
+    "clean": "lerna clean",
+    "plop": "plop"
   },
   "keywords": [],
   "author": "shiguanghai <wangzibo18@outlook.com> (https://shiguanghai.top/)",
@@ -33,6 +35,8 @@
     "cross-env": "^7.0.3",
     "jest": "^26.6.3",
     "lerna": "^4.0.0",
+    "plop": "^2.7.4",
+    "rimraf": "^3.0.2",
     "rollup": "^2.40.0",
     "rollup-plugin-postcss": "^3.1.4",
     "rollup-plugin-terser": "^7.0.2",

@@ -5,7 +5,8 @@
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "del": "rimraf dist"
   },
   "keywords": [],
   "author": "shiguanghai <wangzibo18@outlook.com> (https://shiguanghai.top/)",

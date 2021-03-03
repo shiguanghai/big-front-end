@@ -6,7 +6,8 @@
   "module": "dist/es/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "del": "rimraf dist"
   },
   "keywords": [],
   "author": "shiguanghai <wangzibo18@outlook.com> (https://shiguanghai.top/)",
