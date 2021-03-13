@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <button @click="increase">按钮</button>
+    <span>{{ count }}</span>
+  </div>
+  <script type="module">
+    import { createApp, ref } from './node_modules/vue/dist/vue.esm-browser.js'
+    
+    function useCount () {
+      const count = ref(0)
+      return {
+        count,
+        increase: () => {
+          count.value++
+        }
+      }
+    }
+
+    createApp({
+      setup () {
+        return {
+          ...useCount()
+        }        
+      }
+    }).mount('#app')
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="module">
+    import { reactive, effect, ref } from './reactivity/index.js'
+
+    const price = ref(5000)
+    const count = ref(3)
+   
+    let total = 0 
+    effect(() => {
+      total = price.value * count.value
+    })
+    console.log(total)
+
+    price.value = 4000
+    console.log(total)
+
+    count.value = 1
+    console.log(total)
+
+  </script>
+</body>
+</html>
