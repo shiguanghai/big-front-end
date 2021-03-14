@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    x: {{ position.x }} <br>
+    y: {{ position.y }}
+  </div>
+  <script type="module">
+    import { createApp } from './node_modules/vue/dist/vue.esm-browser.js'
+
+    const app = createApp({
+      data () {
+        return {
+          position: {
+            x: 0,
+            y: 0
+          }
+        }
+      }
+    })
+    console.log(app)
+
+    app.mount('#app')
+
+  </script>
+</body>
+</html>
