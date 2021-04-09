@@ -7,7 +7,7 @@
 </head>
 <body>
   <script type="module">
-    import { reactive, effect, toRefs } from './reactivity/index.js'
+    import { reactive, effect, toRefs } from './reactivity/reactive.js'
 
     function useProduct () {
       const product = reactive({
@@ -20,7 +20,6 @@
     }
 
     const { price, count } = useProduct()
-
 
     let total = 0 
     effect(() => {

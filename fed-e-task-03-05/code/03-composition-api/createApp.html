@@ -7,23 +7,47 @@
 </head>
 <body>
   <div id="app">
-    x: {{ position.x }} <br>
-    y: {{ position.y }}
+    x: {{ x }} <br>
+    y: {{ y }}
   </div>
   <script type="module">
-    import { createApp } from './node_modules/vue/dist/vue.esm-browser.js'
+    import { createApp, reactive, onMounted, onUnmounted, toRefs } from './node_modules/vue/dist/vue.esm-browser.js'
+
+    function useMousePosition () {
+      // 第一个参数 props
+      // 第二个参数 context对象，attrs、emit、slots
+      const position = reactive({
+        x: 0,
+        y: 0
+      })
+
+      // 定义事件处理函数
+      const update = e => {
+        position.x = e.pageX
+        position.y = e.pageY
+      }
+
+      onMounted(() => {
+        window.addEventListener('mousemove', update)
+      })
+
+      onUnmounted(() => {
+        window.removeEventListener('mousemove', update)
+      })
+
+      return toRefs(position)
+    }
 
     const app = createApp({
-      data () {
+      setup () {
+        // const position = useMousePosition()
+        const { x, y } = useMousePosition()
         return {
-          position: {
-            x: 0,
-            y: 0
-          }
+          x,
+          y
         }
       }
     })
-    console.log(app)
 
     app.mount('#app')
 

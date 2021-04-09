@@ -24,7 +24,9 @@
         const answer = ref('')
 
         watch(question, async (newValue, oldValue) => {
+          // fetch 返回的是 promise 对象
           const response = await fetch('https://www.yesno.wtf/api')
+          // 接口返回的是 json 类型的数据 ，json 返回的也是 promise 对象
           const data = await response.json()
           answer.value = data.answer
         })

@@ -7,12 +7,12 @@
 </head>
 <body>
   <script type="module">
-    import { reactive } from './reactivity/index.js'
+    import { reactive } from './reactivity/reactive.js'
     const obj = reactive({
-      name: 'zs',
-      age: 18
+      name: 'sgh',
+      age: 21
     })
-    obj.name = 'lisi'
+    obj.name = 'zs'
     delete obj.age
     console.log(obj)
   </script>
