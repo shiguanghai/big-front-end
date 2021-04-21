@@ -1,0 +1,12 @@
+{
+  "name": "my-gridsome",
+  "private": true,
+  "scripts": {
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build"
+  },
+  "dependencies": {
+    "sharp": "^0.28.1"
+  }
+}
